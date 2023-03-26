@@ -1,0 +1,202 @@
+body{
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+.left-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.right-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
+    width: 400px;
+    margin-left: 30px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0080ff;
+}
+
+
+/* Estilos do section */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .login,
+  .verticalLine,
+  .cadastro {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .verticalLine {
+    border-left: 1px solid #ccc;
+    height: 100%;
+    margin: 0 20px;
+  }
+
+.login {
+    background-position: center;
+    background-size: cover;
+    background-color: #f2f2f2;
+    color: #000000;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    /* centralizar o conteúdo */
+}
+
+.log {
+    float: left;
+}
+
+.cadastro {
+    float: right;
+}
+
+.log,
+.cadastro {
+    margin: 10px;
+}
+
+.hero h1 {
+    color: #009EE0;
+    font-size: 3em;
+    margin: 0;
+    line-height: 1.2;
+    /* aumentar o espaçamento entre linhas */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    /* aumentar a margem superior e inferior */
+    vertical-align: top;
+    line-height: 1.5;
+    /* aumentar o espaçamento entre linhas */
+}
+
+.cta-button {
+    background-color: #009EE0;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #009EE0;
+    color: #E3E3E3;
+}
+
+.verticalLine {
+    background-color: #E3E3E3;
+    border-radius: 10px;
+    size: 4px;
+    height: 300px
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    /* adicione essa linha */
+}
+
+
+footer {
+	background-color: #f2f2f2;
+	padding: 50px;
+}
+
+footer h3 {
+	color: #009EE0;
+}
+
+.final {
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+}
+
+.final>div {
+	flex-grow: 1;
+}
+
+.catalago,
+.aboutUs,
+.atendi {
+	margin-right: 20px;
+}
+
+.endAll {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flags {
+	float: right;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20px;
+}
+
+.endAll {
+	background-color: #009EE0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}

@@ -5,21 +5,22 @@ body {
 }
 
 /* Estilos do cabeçalho */
+
 header {
 	background-color: #f2f2f2;
 	padding: 10px;
 }
 
 nav ul h1 {
-	font-family:Verdana, Geneva, Tahoma, sans-serif ;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font: 600;
 	color: #009EE0;
 	position: relative;
 	text-align: center
 }
 
-nav hr{
-	background-color: #E3E3E3;
+nav hr {
+	background-color: #f2f2f2;
 	border-radius: 10px;
 }
 
@@ -29,6 +30,10 @@ nav ul {
 	text-align: center;
 	margin: 0;
 	padding: 0;
+}
+
+.nav-links {
+	float: left;
 }
 
 nav li {
@@ -41,6 +46,10 @@ nav a {
 	text-decoration: none;
 }
 
+.nav-right {
+	float: right;
+}
+
 
 /* Estilos do herói */
 .hero {
@@ -50,7 +59,7 @@ nav a {
 	background-color: #f2f2f2;
 	color: #000000;
 	padding: 25px 100px;
-	display:flex
+	display: flex
 }
 
 .dino {
@@ -65,11 +74,12 @@ nav a {
 
 .hero p {
 	font-size: 1.2em;
-	margin: 10px 0;
+	margin: 30px 0;
 	vertical-align: top;
+	line-height: 2.0;
 }
 
-.hero img{
+.hero img {
 	width: 300px;
 	height: 400px;
 	border-top-left-radius: 130px;
@@ -103,11 +113,90 @@ nav a {
 }
 
 .featured-products h2 {
+	color: #009EE0;
 	font-size: 2em;
 	margin-bottom: 20px;
 }
 
-.anabol{
+.filtros {
+	display: flex;
+	justify-content: left;
+}
+
+.filtros p {
+	margin: 0 10px;
+}
+
+.anabol {
 	width: 100%;
 	text-align: center;
+}
+
+.newsletter {
+	background-color: #f2f2f2;
+	padding: 10px;
+
+}
+
+.newsletter h1 {
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font: 600;
+	color: #009EE0;
+	position: relative;
+	text-align: center
+}
+
+.newsletter p {
+	text-align: center;
+}
+
+.photoNew {
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	background-color: #fff;
+	padding: 50px;
+}
+
+footer h3 {
+	color: #009EE0;
+}
+
+.final {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+.final>div {
+	flex-grow: 1;
+}
+
+.catalago,
+.aboutUs,
+.atendi {
+	margin-right: 20px;
+}
+
+.endAll {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flags {
+	float: right;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20px;
+}
+
+.endAll {
+	background-color: #009EE0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
