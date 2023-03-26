@@ -130,6 +130,7 @@ nav a {
 .anabol {
 	width: 100%;
 	text-align: center;
+	color: #009EE0;
 }
 
 .newsletter {
@@ -192,6 +193,11 @@ footer h3 {
 	display: flex;
 	justify-content: flex-start;
 	margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #009EE0;
+    color: #E3E3E3;
 }
 
 .endAll {
