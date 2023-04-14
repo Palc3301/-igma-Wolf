@@ -5,44 +5,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login ou Cadastro</title>
+	<script src="pag2.js"></script>
     <link rel="stylesheet" href="style2.css" />
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <hr size="5" width="2300">
-
-            </ul>
+			<ul class="menu" >
+				<ul style="list-style: none;">
+				<li class="logo">
+				  <a href="index.html">
+					<img src="imagem/$igma.png" alt="Logo da Sigma Wolf" width="275" height="275">
+				  </a>
+				</li>
         </nav>
     </header>
 
-    <main >
-        <section class="login">
-            <div class="log">
-                <h2>Já tem conta? Efetue seu login</h2>
-                <form>
-                    <input type="text" placeholder="E-mail ou CPF" />
-                    <input type="password" placeholder="Senha" />
-                    <a href="#" class="cta-button">Entrar</a>
-                </form>
-            </div>
-
-            <div class="cadastro">
-                
-                <form>
-                    <h2>Criar Conta</h2>
-                    <input type="email" placeholder="E-mail ou CPF" />
-                    <input type="text" placeholder="Nome Completo" />
-                    <input type="password" placeholder="Senha" />
-                    <a href="#" class="cta-button">Criar Conta</a>
-                </form>
-            </div>
-        </section>
-
-        <hr size="5" width="2300">
-    </main>
+    <main>
+		<section class="login">
+			<ul style="display: flex; flex-wrap: wrap; list-style: none;">
+			
+		  <div class="log">
+			<h2>Já tem conta? Efetue seu login</h2>
+			<form>
+			  <input type="text" placeholder="E-mail ou CPF" id="login-email" />
+			  <input type="password" placeholder="Senha" id="login-password" />
+			  <a href="index.html" class="cta-button" id="login-button">Entrar</a>
+			</form>
+		  </div>
+	  
+		  <div class="cadastro">
+			<ul style="display: flex; flex-wrap: wrap; list-style: none;">
+			<form>
+			  <h2>Criar Conta</h2>
+			  <input type="email" placeholder="E-mail ou CPF" id="signup-email" />
+			  <input type="text" placeholder="Nome Completo" id="signup-name" />
+			  <input type="password" placeholder="Senha" id="signup-password" />
+			  <a href="index.html" class="cta-button" id="signup-button">Criar Conta</a>
+			</form>
+		  </div>
+		</section>
+	  
+		<hr size="5" width="2300">
+	  </main>
+	  
+	  <style>
+		.cta-button {
+		  display: inline-block;
+		  padding: 10px 20px;
+		  border-radius: 20px;
+		  font-size: 1.2em;
+		  text-align: center;
+		  color: white;
+		  background-color: #00bfff;
+		  transition: background-color 0.2s ease;
+		}
+	  
+		.cta-button:hover {
+		  background-color: #00bfff;
+		}
+	  </style>
+	  
+	  <script>
+		const loginButton = document.getElementById('login-button');
+		const signupButton = document.getElementById('signup-button');
+	  
+		
+		loginButton.addEventListener('mouseover', () => {
+		  loginButton.style.transform = 'scale(1.1)';
+		});
+	  
+		loginButton.addEventListener('mouseout', () => {
+		  loginButton.style.transform = 'scale(1)';
+		});
+	  
+		signupButton.addEventListener('mouseover', () => {
+		  signupButton.style.transform = 'scale(1.1)';
+		});
+	  
+		signupButton.addEventListener('mouseout', () => {
+		  signupButton.style.transform = 'scale(1)';
+		});
+	  </script>
     <footer>
 
 		<div class="final">

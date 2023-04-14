@@ -3,6 +3,12 @@ body{
     background-color: #f2f2f2;
 }
 
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
 
 .left-container {
     background-color: #ffffff;
@@ -27,6 +33,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    
 }
 
 label {
@@ -52,7 +59,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0080ff;
+    background-color: #00b0ff;
 }
 
 
@@ -61,6 +68,7 @@ input[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: stretch;
+    
   }
   
   .login,
