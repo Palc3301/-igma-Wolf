@@ -2,135 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login ou Cadastro</title>
-	<script src="pag2.js"></script>
-    <link rel="stylesheet" href="style2.css" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Login ou Cadastro</title>
+	<link rel="stylesheet" href="style2.css" />
 </head>
 
 <body>
-    <header>
-        <nav>
-			<ul class="menu" >
-				<ul style="list-style: none;">
+	<header>
+		<nav>
+			<ul class="menu">
 				<li class="logo">
-				  <a href="index.html">
-					<img src="imagem/$igma.png" alt="Logo da Sigma Wolf" width="275" height="275">
-				  </a>
+					<a href="index.html">
+						<img src="imagem/$igma.png" alt="Logo da Sigma Wolf" width="275" height="275">
+					</a>
 				</li>
-        </nav>
-    </header>
+			</ul>
+		</nav>
+	</header>
 
-    <main>
+	<main>
 		<section class="login">
-			<ul style="display: flex; flex-wrap: wrap; list-style: none;">
-			
-		  <div class="log">
-			<h2>Já tem conta? Efetue seu login</h2>
-			<form>
-			  <input type="text" placeholder="E-mail ou CPF" id="login-email" />
-			  <input type="password" placeholder="Senha" id="login-password" />
-			  <a href="index.html" class="cta-button" id="login-button">Entrar</a>
-			</form>
-		  </div>
-	  
-		  <div class="cadastro">
-			<ul style="display: flex; flex-wrap: wrap; list-style: none;">
-			<form>
-			  <h2>Criar Conta</h2>
-			  <input type="email" placeholder="E-mail ou CPF" id="signup-email" />
-			  <input type="text" placeholder="Nome Completo" id="signup-name" />
-			  <input type="password" placeholder="Senha" id="signup-password" />
-			  <a href="index.html" class="cta-button" id="signup-button">Criar Conta</a>
-			</form>
-		  </div>
+			<div class="log">
+				<h2>Já tem conta? Efetue seu login</h2>
+				<form id="login-form">
+					<input type="text" placeholder="E-mail ou CPF" id="login-email" />
+					<input type="password" placeholder="Senha" id="login-password" />
+					<button type="submit" class="cta-button" id="login-button">Entrar</button>
+				</form>
+			</div>
+
+			<div class="cadastro">
+				<form id="signup-form">
+					<h2>Criar Conta</h2>
+					<input type="email" placeholder="E-mail ou CPF" id="signup-email" />
+					<input type="text" placeholder="Nome Completo" id="signup-name" />
+					<input type="password" placeholder="Senha" id="signup-password" />
+					<button type="submit" class="cta-button" id="signup-button">Criar Conta</button>
+				</form>
+			</div>
 		</section>
-	  
+
 		<hr size="5" width="2300">
-	  </main>
-	  
-	  <style>
-		.cta-button {
-		  display: inline-block;
-		  padding: 10px 20px;
-		  border-radius: 20px;
-		  font-size: 1.2em;
-		  text-align: center;
-		  color: white;
-		  background-color: #00bfff;
-		  transition: background-color 0.2s ease;
-		}
-	  
-		.cta-button:hover {
-		  background-color: #00bfff;
-		}
-	  </style>
-	  
-	  <script>
-		const loginButton = document.getElementById('login-button');
-		const signupButton = document.getElementById('signup-button');
-	  
-		
-		loginButton.addEventListener('mouseover', () => {
-		  loginButton.style.transform = 'scale(1.1)';
-		});
-	  
-		loginButton.addEventListener('mouseout', () => {
-		  loginButton.style.transform = 'scale(1)';
-		});
-	  
-		signupButton.addEventListener('mouseover', () => {
-		  signupButton.style.transform = 'scale(1.1)';
-		});
-	  
-		signupButton.addEventListener('mouseout', () => {
-		  signupButton.style.transform = 'scale(1)';
-		});
-	  </script>
-    <footer>
+	</main>
 
-		<div class="final">
-			<div class="catalago">
-				<h3>CATÁLAGO</h3>
-				<p>Roupas E Acessórios</p>
-				<p>Suplementos</p>
-				<p>Equipamentos</p>
-				<p>Área 51</p>
-			</div>
-			<div class="abotUs">
-				<h3>SOBRE NÓS</h3>
-				<p>Produtos</p>
-				<p>Mapa do Site</p>
-				<p>FAQ</p>
-				<p>Sobre Os Sigmas</p>
-				<p>Termos E Condições</p>
-			</div>
-			<div class="atendi">
-				<h3>ATENDIMENTO AO CLIENTE</h3>
-				<p>Contate-Nos</p>
-				<p>Rastreie Sua Enconmenda</p>
-				<p>Cuidados do Produto</p>
-				<p>Marcar Um Horário</p>
-				<p>Envio E Devoluçoes</p>
+	<script src="Js/pag2.js"></script>
+</body>
 
-			</div>
+<footer>
+
+	<div class="final">
+		<div class="catalago">
+			<h3>CATÁLAGO</h3>
+			<p>Roupas E Acessórios</p>
+			<p>Suplementos</p>
+			<p>Equipamentos</p>
+			<p>Área 51</p>
 		</div>
-		<div class="endAll">
-			<div class="flags">
-				<p>&copy; Copyright © 2020 Sigma Wolf Labs.</p>
-			  <img src="https://aux.iconspalace.com/uploads/1327818691774591755.png" alt="" height="40"
+		<div class="abotUs">
+			<h3>SOBRE NÓS</h3>
+			<p>Produtos</p>
+			<p>Mapa do Site</p>
+			<p>FAQ</p>
+			<p>Sobre Os Sigmas</p>
+			<p>Termos E Condições</p>
+		</div>
+		<div class="atendi">
+			<h3>ATENDIMENTO AO CLIENTE</h3>
+			<p>Contate-Nos</p>
+			<p>Rastreie Sua Enconmenda</p>
+			<p>Cuidados do Produto</p>
+			<p>Marcar Um Horário</p>
+			<p>Envio E Devoluçoes</p>
+
+		</div>
+	</div>
+	<div class="endAll">
+		<div class="flags">
+			<p>&copy; Copyright © 2020 Sigma Wolf Labs.</p>
+			<img src="https://aux.iconspalace.com/uploads/1327818691774591755.png" alt="" height="40" width="40">
+			<img src="https://pt.seaicons.com/wp-content/uploads/2015/06/American-Express-icon.png" alt="" height="40"
 				width="40">
-			  <img src="https://pt.seaicons.com/wp-content/uploads/2015/06/American-Express-icon.png" alt=""
+			<img src="https://pt.seaicons.com/wp-content/uploads/2015/06/Paypal-icon1.png" alt="" height="40"
+				width="40">
+			<img src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Discover-icon.png" alt=""
 				height="40" width="40">
-			  <img src="https://pt.seaicons.com/wp-content/uploads/2015/06/Paypal-icon1.png" alt="" height="40"
-				width="40">
-			  <img src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Discover-icon.png"
-				alt="" height="40" width="40">
-				
-			</div>
+
 		</div>
-	</footer>
+	</div>
+</footer>
 
 </body>
 
